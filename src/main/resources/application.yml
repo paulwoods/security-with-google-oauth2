@@ -1,0 +1,18 @@
+logging:
+  level:
+    web: debug
+    org.springframework.security: debug
+
+spring:
+  application:
+    name: security-with-google-oauth2
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+
+  thymeleaf:
+    cache: false
